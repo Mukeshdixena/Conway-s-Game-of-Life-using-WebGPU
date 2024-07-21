@@ -1,10 +1,9 @@
+/* Existing styles */
 .control-buttons {
     margin: 50px;
 }
 
 button {
-    /* display: inline-block; */
-    /* outline: none; */
     cursor: pointer;
     font-size: 14px;
     line-height: 1;
@@ -24,12 +23,10 @@ button {
     height: 10;
     width: 48px;
     margin: 10px;
-
 }
 
 button:hover {
     background-color: #181e1a;
-
 }
 
 html,
@@ -38,8 +35,6 @@ body {
     padding: 0;
     border: 0;
     font-size: 100%;
-    /* background: rgb(197, 197, 237); */
-    /* background:  rgb(60, 60, 60); */
     background: rgba(181, 201, 154);
     width: 100%;
     height: 100%;
@@ -47,28 +42,25 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: relative; /* Make sure the footer is positioned relative to the body */
 }
 
 canvas {
     width: 50%;
     aspect-ratio: 1;
     border-radius: 5px;
-    /* width: 100%; */
-    /* height: 100%; */
 }
 
 .left {
     width: 10%;
     float: left;
     background-color: rgb(60, 60, 60);
-    ;
     padding: 20px;
 }
 
 .video-container {
     width: 100%;
     float: left;
-    /* background-color: #e0e0e0; */
     padding: 20px;
 }
 
@@ -77,5 +69,26 @@ img {
     height: auto;
 }
 
+/* New styles for footer */
+.footer {
+    position: absolute; /* Position footer absolutely to the bottom right */
+    bottom: 10px;
+    right: 10px;
+}
 
+.footer a {
+    text-decoration: none;
+    color: #15883e;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: 2px solid #15883e;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
 
+.footer a:hover {
+    background-color: #15883e;
+    color: #fff;
+}
