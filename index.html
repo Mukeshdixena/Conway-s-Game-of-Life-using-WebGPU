@@ -10,20 +10,29 @@
 
 <body>
 
-    <div class="right">
-        <img src="rules.png" alt="" srcset="">
-    </div>
+    <div class="layout">
 
-    <div class="video-container">
-        <canvas></canvas>
-        <div class="control-buttons">
-            <!-- <button id="prevButton">Previous</button> -->
-            <button id="playPauseButton"><span id="play_push">Play</span></button>
-            <button id="nextButton">Next</button>
+        <!-- LEFT SIDE: RULES -->
+        <div class="left-panel">
+            <img src="rules.png" alt="Rules">
         </div>
+
+        <!-- RIGHT SIDE: CANVAS AREA -->
+        <div class="right-panel">
+
+            <div id="webgpu-replacement" class="webgpu-replacement"></div>
+
+            <canvas id="life-canvas"></canvas>
+
+            <div class="control-buttons">
+                <button id="playPauseButton"><span id="play_push">Play</span></button>
+                <button id="nextButton">Next</button>
+            </div>
+
+        </div>
+
     </div>
 
-    <!-- Footer with GitHub link -->
     <footer class="footer">
         <a href="https://github.com/Mukeshdixena/Conway-s-Game-of-Life-using-WebGPU" target="_blank" rel="noopener noreferrer">
             GitHub repo
