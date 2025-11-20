@@ -140,3 +140,20 @@ button:disabled {
     border: 1px solid #d88;
     font-size: 14px;
 }
+.page-title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+
+    font-size: 32px;
+    font-weight: 800;
+
+    margin: 0;
+    padding: 18px 0;
+
+    background: #b5c99a; /* same as page background */
+    z-index: 9999;       /* above all other elements */
+    color: #1a1a1a;
+}
